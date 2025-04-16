@@ -37,6 +37,7 @@ public class PlayerController2 : MonoBehaviour
         }
         
     }
+    
     void OnAttack()
         {
             Instantiate(bullet,bulletSpawnerRight.transform.position, bulletSpawnerRight.transform.rotation);

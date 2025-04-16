@@ -16,7 +16,6 @@ public class Bullet : MonoBehaviour
     {
         rb.AddForce(transform.forward * projectileSpeed);
     }
-    // This checks what the bullet collided with, if it is tagged Enemy, the bullet is destroyed
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
