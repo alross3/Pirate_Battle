@@ -647,9 +647,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 243280400560990796, guid: ccd7a7e7df7612c43b7fb7f09611ce0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 334165097287340139, guid: ccd7a7e7df7612c43b7fb7f09611ce0e, type: 3}
       propertyPath: playerTag
       value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806406493031161511, guid: ccd7a7e7df7612c43b7fb7f09611ce0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7283911856389975777, guid: ccd7a7e7df7612c43b7fb7f09611ce0e, type: 3}
       propertyPath: m_Name
@@ -698,6 +706,10 @@ PrefabInstance:
     - target: {fileID: 7680093112819720222, guid: ccd7a7e7df7612c43b7fb7f09611ce0e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9026724519202626609, guid: ccd7a7e7df7612c43b7fb7f09611ce0e, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1140,6 +1152,58 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405830797}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1529142970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1529142973}
+  - component: {fileID: 1529142972}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1529142972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529142970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ac9b609093ad443b719cc4287a3eb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpPrefabs:
+  - {fileID: 434422425479380452, guid: 48261b8c08752564cb470903fcf3ed4b, type: 3}
+  - {fileID: 434422425479380452, guid: 72f4213846f68a6449c399adc6b3d556, type: 3}
+  - {fileID: 434422425479380452, guid: 885070d8c61b240469e63ef79104a5c2, type: 3}
+  spawnInterval: 5
+  spawnAreaMin: {x: 0, y: 0}
+  spawnAreaMax: {x: 10, y: 10}
+  maxActivePowerUps: 5
+--- !u!4 &1529142973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529142970}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.19, y: 0, z: 9.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1594180718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7283911856389975777, guid: ccd7a7e7df7612c43b7fb7f09611ce0e, type: 3}
@@ -1335,6 +1399,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 3925894524307770836, guid: 0e0202e8a305f4b4dbc70287c715ffcf, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Gamepad
+      objectReference: {fileID: 0}
     - target: {fileID: 4797497065072760130, guid: 0e0202e8a305f4b4dbc70287c715ffcf, type: 3}
       propertyPath: teamTag
       value: Player1
@@ -1342,6 +1410,14 @@ PrefabInstance:
     - target: {fileID: 4797497065072760130, guid: 0e0202e8a305f4b4dbc70287c715ffcf, type: 3}
       propertyPath: playerTag
       value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214750994967378857, guid: 0e0202e8a305f4b4dbc70287c715ffcf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9218262413595987778, guid: 0e0202e8a305f4b4dbc70287c715ffcf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1469,3 +1545,4 @@ SceneRoots:
   - {fileID: 118436020}
   - {fileID: 1733914967}
   - {fileID: 964211731}
+  - {fileID: 1529142973}

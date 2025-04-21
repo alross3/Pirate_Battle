@@ -6,10 +6,10 @@ public class PlayerController4 : MonoBehaviour
 
 {   //Control Variables
     [SerializeField]
-    private float playerSpeed = 5.0f;
-    private CharacterController controller;
-    private Vector3 playerVelocity;
-    private Vector2 movementInput = Vector2.zero;
+    public float playerSpeed = 5.0f;
+    public CharacterController controller;
+    public Vector3 playerVelocity;
+    public Vector2 movementInput = Vector2.zero;
     public float rotationSpeed;
     //Cannon Variables
     [SerializeField]
@@ -19,7 +19,7 @@ public class PlayerController4 : MonoBehaviour
     GameObject bulletSpawnerLeft;
     [SerializeField]
     GameObject bullet;
-    [SerializeField] private float cannonCooldown = 0.5f;
+    [SerializeField] public float cannonCooldown = 0.5f;
     private bool canShoot = true;
     public string playerTag;
 
@@ -40,7 +40,7 @@ public class PlayerController4 : MonoBehaviour
         // Horizontal input
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
         move.Normalize();
-        move = Vector3.ClampMagnitude(move, 1f); // Optional: prevents faster diagonal movement
+        move = Vector3.ClampMagnitude(move, 1f);
 
         transform.Translate(move * playerSpeed * Time.deltaTime, Space.World);
 
