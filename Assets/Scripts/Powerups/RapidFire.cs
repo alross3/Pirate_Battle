@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RapidFire : PowerUp
 {
-    [SerializeField] private float fireRateMultiplier = 0.2f;
+    [SerializeField] private float fireRateMultiplier = 0.5f;
 
     protected override void ApplyEffect(GameObject player)
     {

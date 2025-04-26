@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpeedBoost : PowerUp
 {
-    [SerializeField] private float speedMultiplier = 2f;
+    [SerializeField] private float speedMultiplier = 2.5f;
 
     protected override void ApplyEffect(GameObject player)
     {

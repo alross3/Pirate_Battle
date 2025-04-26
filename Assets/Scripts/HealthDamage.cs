@@ -5,15 +5,13 @@ public class HealthDamage : MonoBehaviour, IDamageable
 {
     [SerializeField] private float maxHealth = 50f;
     private float currentHealth;
-    private Renderer playerRenderer;
 
     private void Start()
     {
         currentHealth = maxHealth;
-        playerRenderer = GetComponent<Renderer>(); 
     }
 
-    public void TakeDamage(float damage) 
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         Debug.Log($"{name} took {damage} damage! Health: {currentHealth}");
@@ -23,12 +21,12 @@ public class HealthDamage : MonoBehaviour, IDamageable
 
     private void Die()
     {
-
-        if (playerRenderer != null)
+        
+        Renderer[] allRenderers = GetComponentsInChildren<Renderer>();
+        foreach (var r in allRenderers)
         {
-            playerRenderer.enabled = false;
+            r.enabled = false;
         }
-
 
         StartCoroutine(ResetSceneAfterDelay(3f));
     }
@@ -43,5 +41,4 @@ public class HealthDamage : MonoBehaviour, IDamageable
     {
         return currentHealth / maxHealth;
     }
-
 }

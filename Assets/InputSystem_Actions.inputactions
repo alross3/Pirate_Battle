@@ -1137,6 +1137,17 @@
                 },
                 {
                     "name": "",
+                    "id": "3096ab43-a7ce-4aa6-8bc0-87a8d8a2576d",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "450564c5-7745-42a9-b04c-e6f5b6d2b3f1",
                     "path": "<Keyboard>/2",
                     "interactions": "",
